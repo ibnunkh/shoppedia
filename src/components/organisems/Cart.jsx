@@ -50,11 +50,11 @@ const Cart = () => {
             <p className="text-lg font-semibold">
               Total: Rp. {total.toLocaleString('id-ID')}
             </p>
-            <div className="flex gap-4">
-              <button onClick={clearCart} className="bg-red-500 px-4 py-2 rounded-lg hover:bg-red-600 text-sm text-white hover:cursor-pointer">
+            <div className="flex flex-col md:flex-row gap-4">
+              <button onClick={clearCart} className="bg-red-500 px-4 py-2 rounded-lg hover:bg-red-600 text-white font-semibold hover:cursor-pointer">
                 Kosongkan
               </button>
-              <button className="bg-orange-500 text-white px-6 py-3 rounded-lg hover:bg-orange-600 hover:cursor-pointer">
+              <button className="bg-orange-500 text-white font-semibold px-4 py-2 rounded-lg hover:bg-orange-600 hover:cursor-pointer">
                 Checkout Sekarang
               </button>
             </div>
@@ -62,7 +62,7 @@ const Cart = () => {
         </>
       )}
 
-      <div className="w-full flex items-center justify-start mt-6">
+      <div className="w-full flex items-center justify-center md:justify-start mt-6">
         <Link href="/">
           <button className="bg-green-500 px-4 py-2 text-white font-semibold rounded-lg hover:bg-green-600 hover:cursor-pointer">Kembali ke halaman utama</button>
         </Link>
