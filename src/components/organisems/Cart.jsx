@@ -13,7 +13,7 @@ const Cart = () => {
 
   return (
     <section className="max-w-4xl mx-auto p-4 bg-white rounded-lg shadow-lg border border-gray-300">
-      <h2 className="text-xl font-semibold mb-4">Keranjang Belanja</h2>
+      <h2 className="text-xl font-semibold mb-4 font-montserrat">Keranjang Belanja</h2>
 
       {cart.length === 0 ? (
         <p className="text-gray-600">Keranjang Kosong</p>

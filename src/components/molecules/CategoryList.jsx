@@ -15,7 +15,7 @@ const CategoryList = () => {
 
     return (
         <section className="p-6 mt-4">
-            <h2 className="text-xl font-semibold mb-4">Kategori</h2>
+            <h2 className="text-2xl font-semibold mb-4 font-montserrat">Kategori</h2>
             <div className="grid grid-cols-2 md:grid-cols-2 gap-4 w-full md:w-xl hover:cursor-pointer">
                 {categories.map((cat, i) => (
                     <div key={i} onClick={() => setCategory(cat.name)} className={`flex flex-col items-center p-4 bg-white shadow-md border rounded-lg ${
